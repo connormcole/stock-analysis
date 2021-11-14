@@ -2,11 +2,11 @@
 
 ## Overview
 
-Steve just graduated with his finance degree and his parents become his first clients. They're passionate about alternative energy and want to invest all their funds into "DQ", but Steve wants them to have a diverse portfolio.  
+Steve just graduated with his finance degree and his parents became his first clients. They're passionate about alternative energy and want to invest all their funds into "DQ", but Steve wants them to have a diverse portfolio.  
 
 ## Purpose
 
-Steve wanted to give his parents a detailed breakdown for how the DQ stock performed, but also analyze other green energy stocks so his parents would see the value in diversifying their portfolio. I was hired to assist in the analysis.
+Steve wanted to give his parents a detailed breakdown for how the DQ stock performed, but also analyze other green energy stocks so his parents would see the value in diversifying their portfolio. I was hired to conduct the analysis.
 
 ## Results
 
@@ -14,7 +14,9 @@ Steve wanted to give his parents a detailed breakdown for how the DQ stock perfo
 
 ![DQ_Analysis](./Resources/DQ_Analysis.png)
 
-Initially, I analyzed the most recent DQ stock performance as Steve's parents requested. I created header rows on the output sheet for the 2018 data, set the total volume to zero, and established the starting and ending stock prices as type "double" to show two places past the decimal point. Next I had to tell the macro which rows to analyze within the 2018 data sheet - row 2 was the starting point, which I set as "rowStart", but to find the last row containing data I had to use a function from stack overflow. I used a "for" loop to loop through all the rows containing DQ info, and output the results to the DQ Analysis worksheet. The results showed that DQ had a fairly sizeable volume traded, but the return for 2018 was negative, so I advised Steve that his parents should not invest everything into DQ.
+Initially, I analyzed the most recent DQ stock performance as Steve's parents requested. I created header rows on the output sheet for the 2018 data, set the total volume to zero, and established the starting and ending stock prices as type "double" to show two places past the decimal point. Next I had to tell the macro which rows to analyze within the 2018 data sheet - row 2 was the starting point, which I set as "rowStart", but to find the last row containing data I had to use a function from stack overflow. I used a "for" loop to loop through all the rows containing DQ info, and outputted the results to the DQ Analysis worksheet. The results showed that DQ had a fairly sizeable volume traded, but the return for 2018 was negative, so I advised Steve that his parents should not invest everything into DQ.
+
+![DQ_Analysis_Result](./Resources/DQ_Analysis_Result.png)
 
 ### All Stocks Analysis
 
@@ -26,9 +28,14 @@ Next I analyzed all 12 of the green energy stocks using similar logic, only this
 ![AllStocksAnalysis_2017](./Resources/AllStocksAnalysis_2017.png)
 ![AllStocksAnalysis_2018](./Resources/AllStocksAnalysis_2018.png)
 
+The images below show the performance of all 12 stocks in 2017 and 2018:
+
+![All_Stocks_2017](./Resources/All_Stocks_2017.png)
+![All_Stocks_2018](./Resources/All_Stocks_2018.png)
+
 ### All Stocks Refactored
 
-In the refactored code I decided to still use an array for all the tickers, but also defined 3 additional arrays for each ticker's volume, starting price and ending price. 
+In the refactored code I decided to still use an array for all the tickers, but also defined 3 additional arrays for each ticker's volume, starting price, and ending price. 
 
 ![AllStocksRefactored](./Resources/AllStocksRefactored.png)
 
